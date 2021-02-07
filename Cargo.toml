@@ -1,0 +1,20 @@
+[package]
+name = "google-smartdevicemanager-rs"
+version = "0.1.0"
+authors = ["Joel Winarske <joel.winarske@linux.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures-util = "0.3.8"
+yup-oauth2 = { version = "5.0.3" }
+tonic = { version = "0.4.0", features = ["tls"] }
+prost = { version = "0.7" }
+prost-types = { version = "0.7" }
+tokio = { version = "1.2.0", features = ["rt-multi-thread", "time", "fs", "macros", "net"] }
+float-pretty-print = "0.1.0"
+
+[build-dependencies]
+git2 = "0.13.14"
+tonic-build = "0.3.1"
