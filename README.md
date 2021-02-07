@@ -2,6 +2,8 @@
 
 Rust code to access the Google Smart Device Management API.  This current version uses Tonic.  Tonic could be replaced with hyper/hyper-tls, request, or activ_web, then use serde_json to serialize/deserialize JSON.  This would also eliminate the protobuf deps.  For now it works.
 
+To pull events from the cloud use a crate such as cloud-pubsub. 
+
 The Google Smart Device Management API enables Read/Write parameters of:
 * Nest Cameras
 * Nest Doorbells
@@ -35,3 +37,7 @@ This file is downloaded via https://console.developers.google.com/apis/credentia
 This value comes from registering project:
 
      export PROJECT_GUID={project-id}
+
+### Stripped Release Size (Tonic)
+
+-rwxrwxr-x. 1 joel joel 3282272 Feb  7 09:31  google-smartdevicemanager-rs
