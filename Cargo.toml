@@ -5,6 +5,8 @@ authors = ["Joel Winarske <joel.winarske@linux.com>"]
 edition = "2018"
 repository = "git@github.com:jwinarske/google-smartdevicemanager-rs.git"
 homepage = "https://github.com/jwinarske/google-smartdevicemanager-rs"
+description = "Google Smart Device Manager Rust example"
+license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
