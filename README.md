@@ -1,6 +1,6 @@
 # google-smartdevicemanager-rs
 
-Rust code to access the Google Smart Device Management API.  This current version uses Tonic.  Tonic could be replaced with hyper/hyper-tls, request, or activ_web, then use serde_json to serialize/deserialize JSON.  This would also eliminate the protobuf deps.  For now it works.
+Rust code to access the Google Smart Device Management API.  This current version uses Tonic.  Given the simplicity of the API (for now), protobuf is overkill.  Serde and reqwest would be a smaller and more performant combo for a number of reasons.  For now it works.
 
 To pull events from the cloud use a crate such as cloud-pubsub. 
 
